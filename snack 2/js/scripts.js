@@ -15,7 +15,10 @@ const squadraDiCalcio = [
         var numeroRandom = (Math.floor(Math.random() * 100) + 1);
         console.log("numeri Random:" + numeroRandom)
     }
-    falliSubiti:0,
+    falliSubiti: function () {
+            var numeroRandom = (Math.floor(Math.random() * 100) + 1);
+            console.log("numeri Random:" + numeroRandom)
+        }
 },
 
 {
@@ -43,6 +46,7 @@ var numeroRandom = (Math.floor(Math.random() * 100) + 1);
 console.log("numeri Random:" + numeroRandom)
 
 
-// Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+// Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono 
+// solo nomi e falli subiti e stampiamo tutto in console.
 const {nome, falliSubiti} = squadraDiCalcio;
 console.log(`nomi e falli subiti delle rispettive squadre di serie A: ${squadraDiCalcio.nome} ${squadraDiCalcio.falliSubiti}`);
