@@ -11,7 +11,10 @@
 const squadraDiCalcio = [
 {   
     nome: "Roma",
-    puntiFatti: 0,
+    puntiFatti: function() {
+        var numeroRandom = (Math.floor(Math.random() * 100) + 1);
+        console.log("numeri Random:" + numeroRandom)
+    }
     falliSubiti:0,
 },
 
