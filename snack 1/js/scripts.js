@@ -27,4 +27,4 @@ for (let i = 0; i < oggettiBici.length; i++) {
 }
 
 // Stampare a schermo la bici con peso minore possibilmente applicando il (template literal)
-console.log(`la bicicleta più leggerà è bici_due = ${biciclettaLeggera.pesoKg} kg / applicato il (template literal)`);
+console.log(`la bicicletta più leggerà è bici_due = ${biciclettaLeggera.pesoKg} kg / applicato il (template literal)`);
