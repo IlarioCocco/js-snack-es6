@@ -17,7 +17,7 @@ let biciclettaLeggera = oggettiBici[0];
 // let biciclettaLeggera sarà utilizzata come variabile di confronto 
 // attraverso un if (....) {....} , 
 // quindi :  if  variabile oggettiBici[i].pesoKg  <  variabile biciclettaLeggera.pesoKg  
-//quet'ultima risulterà la più leggera visto che ha un valore numerico più piccolo in pesoKg
+// quet'ultima risulterà la più leggera visto che ha un valore numerico più piccolo in {pesoKg: 15}
 
 for (let i = 0; i < oggettiBici.length; i++) {
     if (oggettiBici[i].pesoKg < biciclettaLeggera.pesoKg) {
