@@ -14,8 +14,11 @@ const oggettiBici = [
 let biciclettaLeggera = oggettiBici[0];
 // creo un ciclo for decrementale in positivo  per ciclare all' interno dell array
 // creandomi una variabile (let) a cui darò nome biciclettaLeggera; let biciclettaLeggera. 
-// per poter confrontare (let = oggettiBici[i].pesoKg) attraverso un if(....){....}
-// tutte le biciclette oggetti presenti nel mio array oggettiBici[]
+// let biciclettaLeggera sarà utilizzta come variabile di confronto 
+// attraverso un if (....) {....} , 
+// quindi :  if  variabile oggettiBici[i].pesoKg  <  variabile biciclettaLeggera.pesoKg  
+//quet'ultima risulterà la più leggera visto che ha un valore numerico più piccolo in pesoKg
+
 for (let i = 0; i < oggettiBici.length; i++) {
     if (oggettiBici[i].pesoKg < biciclettaLeggera.pesoKg) {
         biciclettaLeggera = oggettiBici[i];
