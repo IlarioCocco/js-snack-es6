@@ -32,4 +32,4 @@ console.log(`la bicicletta più leggerà è bici_due = ${biciclettaLeggera.pesoK
 
 // Stampare a schermo la bici con peso minore utilizzando destructuring (Destrutturazione)
 const {nome, pesoKg} = oggettiBici;
-console.log(`la bicicletta più leggerà è bici_due = ${biciclettaLeggera.pesoKg} kg / applicato il (template literal)`);
+console.log(`la bicicletta più leggerà è bici_due = ${biciclettaLeggera.pesoKg} kg / applicato il destructuring: const {nome, pesoKg} = oggettiBici;`);
