@@ -1,0 +1,27 @@
+// Creare un array di oggetti:
+// Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+// Stampare a schermo la bici con peso minore
+
+
+// Creare un array [] di oggetti {} in questo caso si tratta di (bici):
+const oggettiBici = [
+    { nome: "bici_uno", pesoKg: 40 },
+    { nome: "bici_due", pesoKg: 15 },
+    { nome: "bici_tre", pesoKg: 20 },
+];
+
+
+let biciclettaLeggera = oggettiBici[0];
+// creo un ciclo for decrementale in positivo  per ciclare all' interno dell array
+// creandomi una variabile (let) a cui darò nome biciclettaLeggera; let biciclettaLeggera. 
+// per poter confrontare (let = oggettiBici[i].pesoKg) attraverso un if(....){....}
+// tutte le biciclette oggetti presenti nel mio array oggettiBici[]
+for (let i = 0; i < oggettiBici.length; i++) {
+    if (oggettiBici[i].pesoKg < biciclettaLeggera.pesoKg) {
+        biciclettaLeggera = oggettiBici[i];
+    }
+
+}
+
+// Stampare a schermo la bici con peso minore possibilmente applicando il (template literal)
+console.log(`la bicicleta più leggerà è bici_due = ${biciclettaLeggera.pesoKg} kg`);
