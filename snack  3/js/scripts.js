@@ -40,20 +40,16 @@
 
 // FILTER---------------------------
 
-const array_primario = ["a", "b", "c", "d", "e"];
+const array_primario = ["andrea", "barbara", "carlo", "dario", "emanuele"];
 console.log(array_primario);
 
+
 const possibileSoluzione = array_primario.filter(
-    (elm)=> {
-        if (elm >= "b" && elm <= "d") {
-           
-            return true
-            
-        }
-        
+    (elm, i)=> {
+        // console.log(elm)
+        return i >= 1 && i <= 3 ;
     }
-    
-); console.log(possibileSoluzione)
+); console.log(`gli estremi sono compresi tra 1 & 3 : ${possibileSoluzione}`)
 
 
 
@@ -63,32 +59,30 @@ const possibileSoluzione = array_primario.filter(
 
 // FOR EACH---------------------------
 
-// const array_primario = ["a", "b", "c", "d", "e"];
+// const array_primario = ["alessandro", "barbara", "carlo", "dario", "emanuele"];
 // console.log(array_primario);
 
-// array_primario.forEach( (elm) => {
-//     if (elm >= "b" && elm <= "d"){
-//       console.log(elm)
+// array_primario.forEach((element,index) => {
+//     console.log(element, index);
+//     if (element >= 1 && element <= 3 ){
+       
+//         console.log();
 //     }
-// } );
+// }); 
 
 
 
 
 
 
-// testing -------------
+// testing -------------FILTER
 
+// const numeri = [0,1,2,3,45,67,33,22,43,5,6,4,9];
+// console.log(numeri)
 
-// esercizio a
-// // forEach
-
-// const numeri = [1, 2, 3];
-
-// numeri.forEach( (element) => { 
-
-//     console.log(element) 
-
+// const numeriPari = numeri.filter(
+//     (elm)=> {
+//         if (elm % 2 === 0 ){
 // } );
 
 
