@@ -26,10 +26,10 @@ for (let i = 0; i < oggettiBici.length; i++) {
 
 }
 
-// Stampare a schermo la bici con peso minore applicando il (template literal)
+// Stampare a schermo la bici con peso minore applicando il (template literal):
 console.log(`la bicicletta più leggerà è bici_due = ${biciclettaLeggera.pesoKg} kg / applicato il (template literal)`);
 
 
-// Stampare a schermo la bici con peso minore utilizzando destructuring (Destrutturazione)
+// Stampare a schermo la bici con peso minore utilizzando destructuring (Destrutturazione):
 const { nome, pesoKg } = biciclettaLeggera;
-console.log(`la bicicletta più leggerà è ${nome} il suo peso è ${pesoKg} kg / applicato il destructuring: const {nome, pesoKg} = oggettiBici;`);
+console.log(`la bicicletta più leggerà è ${nome} il suo peso è ${pesoKg} kg / applicato il (destructuring)=> const {nome, pesoKg} = biciclettaLeggera;`);
