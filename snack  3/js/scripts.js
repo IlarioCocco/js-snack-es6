@@ -40,8 +40,8 @@
 
 // FILTER---------------------------
 
-// const array_primario = ["andrea", "barbara", "carlo", "dario", "emanuele"];
-// console.log(array_primario);
+const array_primario = ["andrea", "barbara", "carlo", "dario", "emanuele"];
+console.log(array_primario);
 
 // const possibileSoluzione = array_primario.filter(
 //     (elm, i) => {
@@ -52,20 +52,25 @@
 
 
 
+const possibileSoluzione = array_primario.filter((i) => { return i >= 1 && i <= 3;}); 
+console.log(`gli estremi sono compresi tra 1 & 3 : ${possibileSoluzione}`)
+
+
+
 // esercizio snack 3
 
-// FOR EACH---------------------------
+// FOR EACH-----------------------
 
-const array_primario = ["alessandro", "barbara", "carlo", "dario", "emanuele"];
-console.log(array_primario);
+// const array_primario = ["a", "b", "c", "d", "e"];
+// console.log(array_primario);
 
-array_primario.forEach((element, index) => {
-    // console.log(element, index);
-    if (index >= 1 && index <= 3 ){
+// array_primario.forEach((element, index) => {
+//     // console.log(element, index);
+//     if (index >= 1 && index <= 3 ){
        
-        console.log(element);
-    }
-}); 
+//         console.log(element);
+//     }
+// }); 
 
 
 
