@@ -40,14 +40,22 @@
 
 // FILTER---------------------------
 
-const array_primario = ["andrea", "barbara", "carlo", "dario", "emanuele"];
-console.log(array_primario);
+const arr = ["andrea", "barbara", "carlo", "dario", "emanuele"];
+console.log(arr);
 
-const possibileSoluzione = array_primario.filter(
-    (elm, i) => {
-        return i >= 1 && i <= 3 ;
-    }
-); console.log(`gli estremi sono compresi tra 1 & 3 : ${possibileSoluzione}`)
+
+const argomentiArray = (arr, a, b) => {
+     return  arr.filter(
+        (elm, i) => {
+            return i >= a && i <= b; //entrambi vere quindi true
+        }
+    );
+}
+
+
+const newArray = argomentiArray(arr, 1, 3)
+console.log(`gli estremi sono compresi tra 1 & 3 : ${newArray}`)
+
 
 
 
@@ -55,8 +63,8 @@ const possibileSoluzione = array_primario.filter(
 
 // destrutturazione(Destructuring assignment)
 
-const possibileSoluzione = array_primario.filter((i) => { return i >= 1 && i <= 3; }); 
-console.log(`gli estremi sono compresi tra 1 & 3 : ${possibileSoluzione}`)
+// const possibileSoluzione = array_primario.filter((i) => { return i >= 1 && i <= 3; }); 
+// console.log(`gli estremi sono compresi tra 1 & 3 : ${possibileSoluzione}`)
 
 
 
@@ -66,21 +74,27 @@ console.log(`gli estremi sono compresi tra 1 & 3 : ${possibileSoluzione}`)
 
 // FOR EACH-----------------------
 
-const array_primario = ["a", "b", "c", "d", "e"];
-console.log(array_primario);
 
-array_primario.forEach((element, index) => {
-    // console.log(element, index);
-    if (index >= 1 && index <= 3 ){
-       
-        console.log(element);
-    }
-}); 
+// const argomentiArray = (arr, a, b) => {
+//     const arrayTemporaneo = [];
+
+//     arr.forEach(
+//         (element, index) => {
+//             if (index >= a && index <= b) {
+//                 arrayTemporaneo.push(element);
+//             }
+//         }
+     
+//     );
+//     return arrayTemporaneo;
+// }
 
 
 
+// const arr = ["a", "b", "c", "d", "e"];
 
-
+// const newArray = argomentiArray(arr, 1, 3)
+// console.log(newArray);
 
 
 
