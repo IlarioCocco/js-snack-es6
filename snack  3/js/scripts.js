@@ -40,21 +40,23 @@
 
 // FILTER---------------------------
 
-const arr = ["andrea", "barbara", "carlo", "dario", "emanuele"];
-console.log(arr);
+// const arr = ["andrea", "barbara", "carlo", "dario", "emanuele"];
+
+// console.log(arr);
 
 
-const argomentiArray = (arr, a, b) => {
-     return  arr.filter(
-        (elm, i) => {
-            return i >= a && i <= b; //entrambi vere quindi true
-        }
-    );
-}
+// const argomentiArray = (arr, a, b) => {
+//      return  arr.filter(
+//         (elm, i) => {
+//             return i >= a && i <= b; //entrambi vere quindi true
+//         }
+//     );
+// }
 
 
-const newArray = argomentiArray(arr, 1, 3)
-console.log(`gli estremi sono compresi tra 1 & 3 : ${newArray}`)
+// const newArray = argomentiArray(arr, 1, 3)
+// console.log(`gli estremi sono compresi tra 1 & 3 : ${newArray}`)
+
 
 
 
@@ -62,9 +64,17 @@ console.log(`gli estremi sono compresi tra 1 & 3 : ${newArray}`)
 
 
 // destrutturazione(Destructuring assignment)
+// const arr = ["andrea", "barbara", "carlo", "dario", "emanuele"]; //array
+// console.log(arr); //stampa array
 
-// const possibileSoluzione = array_primario.filter((i) => { return i >= 1 && i <= 3; }); 
-// console.log(`gli estremi sono compresi tra 1 & 3 : ${possibileSoluzione}`)
+
+// const argomentiArray = (arr, a, b) => arr.filter( (elm, i)  =>  i >= a && i <= b); //funzione scorciatoia con filter destrutturazione fatto pecedentemente con ciclo filter su più righe e forEach e for)
+
+// const newArray = argomentiArray(arr, 1, 3); //richiamo funzione
+
+// console.log(`gli estremi sono compresi tra 1 & 3 : ${newArray}`) //stampa
+
+
 
 
 
