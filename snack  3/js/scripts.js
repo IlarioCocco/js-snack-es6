@@ -37,10 +37,9 @@
 
 
 // esercizio snack 3
-
 // FILTER---------------------------
 
-// const arr = ["andrea", "barbara", "carlo", "dario", "emanuele"];
+// const arr = ["andrea", "barbara", "carlo", "dario", "emanuele",  "emanuele",  "emanuele"];
 
 // console.log(arr);
 
@@ -56,7 +55,6 @@
 
 // const newArray = argomentiArray(arr, 1, 3)
 // console.log(`gli estremi sono compresi tra 1 & 3 : ${newArray}`)
-
 
 
 
@@ -79,32 +77,31 @@
 
 
 
-
 // esercizio snack 3
-
 // FOR EACH-----------------------
 
 
-// const argomentiArray = (arr, a, b) => {
-//     const arrayTemporaneo = [];
+const argomentiArray = (arr, a, b) => {
+    const arrayTemporaneo = [];
 
-//     arr.forEach(
-//         (element, index) => {
-//             if (index >= a && index <= b) {
-//                 arrayTemporaneo.push(element);
-//             }
-//         }
+    arr.forEach(
+        (element, index) => {
+            if (index >= a && index <= b) {
+                arrayTemporaneo.push(element);
+            }
+        }
      
-//     );
-//     return arrayTemporaneo;
-// }
+    );
+    return arrayTemporaneo;
+}
 
 
 
-// const arr = ["a", "b", "c", "d", "e"];
+const arr = ["a", "b", "c", "d", "e"];
 
-// const newArray = argomentiArray(arr, 1, 3)
-// console.log(newArray);
+const newArray = argomentiArray(arr, 1, 3)
+console.log(`lettere contenute nel nuovo array
+con valori numeri da 1 a 3: ${newArray}`);
 
 
 
